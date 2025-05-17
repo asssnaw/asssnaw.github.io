@@ -1,0 +1,56 @@
+/* ========== About Section Design ========== */
+.about-section {
+    padding: 60px 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Section heading */
+  .about-section h2 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Subheadings */
+  .about-section h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: #003366;
+  }
+  
+  /* paragraph text */
+  .about-section p {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #333;
+  }
+  
+  /* list container */
+  .about-section ul {
+    margin-top: 15px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* list items */
+  .about-section ul li {
+    margin: 10px 0;
+    font-size: 16px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  /* list item icons */
+  .about-section ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
+  

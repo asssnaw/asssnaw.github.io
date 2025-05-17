@@ -1,0 +1,75 @@
+/* ========== Service Section Design ========== */
+.services-section {
+    padding: 60px 30px; /* Adds spacing inside the section */
+    background-color: #ffffff; /* White background for a clean look */
+    text-align: center; /* Centers the section heading and other */
+  }
+  
+  .services-section h2 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px; /* Space below the heading to separate it from content */
+  }
+  
+  .services-container {
+    display: flex; /* Enables horizontal layout */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Multiple Service box containers towards the left side */
+  .services-list {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover for interactivity */
+  }
+  
+  .service-item h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .service-item p {
+    color: #333;
+    font-size: 15px;
+  }
+  
+  /* One big box towards the right containing service information*/
+  .services-info {
+    flex: 1 1 35%;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .services-info h3 {
+    font-size: 22px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+  }
+  
+  .services-info p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+  }
+  

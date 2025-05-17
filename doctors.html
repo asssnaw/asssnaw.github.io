@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- this code makes the site responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Page title displayed -->
+  <title>Our Doctors - Fidoc</title>
+  <!-- Link to external stylesheets -->
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="doctors.css" />
+</head>
+<body>
+
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">Fidoc</div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html" class="active">Doctors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ========== Doctors Section ========== -->
+  <section class="doctors-section">
+
+    <!-- Page Subtitle -->
+    <h2>MEET OUR EXPERT DOCTORS</h2>
+    
+    <!-- Search Box for Doctors -->
+    <div class="search-container">
+        <input type="text" placeholder="Search doctors..." class="search-input" />
+      </div>
+
+    <!-- Container for Scrollable Doctor Cards -->
+    <div class="doctor-box">
+      <div class="doctor-scroll-wrapper">
+
+        <!-- Scroll Left Arrow -->
+        <div class="doctor-scroll-arrow left-arrow">&lt;</div>
+
+         <!-- Scrollable Cards Wrapper -->
+        <div class="doctor-cards-container" id="doctor-scroll">
+          <div class="doctor-cards">
+
+            <!-- Individual Doctor Card -->
+            <div class="doctor-card">
+              <img src="dr. marc takla.jpg" alt="Dr. Marc Takla" />
+              <h3>Dr. Mark Takla</h3>
+              <p>Cardiologist - Dubai, UAE</p>
+            </div>
+
+
+            <div class="doctor-card">
+              <img src="dr lama.jpg" alt="Dr. Lama Jalouk" />
+              <h3>Dr. Lama Jalouk</h3>
+              <p>Dermatologist - Dubai, UAE</p>
+            </div>
+
+
+            <div class="doctor-card">
+              <img src="dr. Evelyne Khoriaty.jpg" alt="Dr. Evelyne Khoriaty" />
+              <h3>Dr. Evelyne Khoriaty</h3>
+              <p>Pediatrician - Dubai Healthcare City</p>
+            </div>
+
+
+            <div class="doctor-card">
+              <img src="dr. Syed Habib Talal.jpg" alt="Dr. Syed Habib Talal" />
+              <h3>Dr. Syed Habib Talal</h3>
+              <p>General Physician - Dubai, UAE</p>
+            </div>
+
+
+            <div class="doctor-card">
+                <img src="Dr Alexandra.jpg" alt="Dr. Alexandra Frances" />
+                <h3>Dr. Alexandra Frances</h3>
+                <p>Beauty Therapist - Jumeirah,Dubai</p>
+              </div>
+
+
+            <div class="doctor-card">
+                <img src="dr. Dominique Caron.jpg" alt="Dr. Dominique Caron" />
+                <h3>Dr. Dominique Caron</h3>
+                <p>Dental Surgeon - Dubai Healthcare City</p>
+              </div>
+
+
+            <div class="doctor-card">
+                <img src="no pic doc.jpg" alt="Dr. Caroline Kanaan" />
+                <h3>Dr. Caroline Kanaan</h3>
+                <p>Nutritionist - Dubai</p>
+              </div>
+
+
+            <div class="doctor-card">
+                <img src="dr. Usha Kiran Talakere.jpg" alt="Dr. Usha Kiran Talakere" />
+                <h3>Dr. Usha Kiran Talakere</h3>
+                <p> Gynaecologist - Dubai</p>
+              </div>
+
+
+          </div> <!-- End of doctor-cards -->
+        </div> <!-- End of doctor-cards-container -->
+
+
+        <!-- Scroll Right Arrow -->
+        <div class="doctor-scroll-arrow right-arrow">&gt;</div>
+
+      </div>  <!-- End of doctor-scroll-wrapper -->
+    </div> <!-- End of doctor-box -->
+  </section>
+
+
+  <!-- ===== Footer Section ===== -->
+  <footer>
+    <!-- ===== Copyright ===== -->
+    <p>&copy; 2025 Fidoc. All rights reserved.</p>
+    <!-- ===== Contact Information ===== -->
+    <p>Contact: service@fidoc.com | +971 551234567</p>
+  </footer>
+
+  <!-- ================= Chatbot Section ================= -->
+
+   <!-- Chatbot Toggle Button- bottom right -->
+ <div id="chat-toggle">💬</div>
+
+ <!-- Chatbox container (hidden by default, shown when clicked) -->
+ <div id="chatbox" class="hidden">
+ <!-- Chatbot title -->
+ <div id="chat-header">Digital Doctor</div>
+ <!-- Chat message window -->
+ <div id="chat-messages"></div>
+
+ <!-- User input and send button -->
+ <div class="chat-input-area">
+   <input type="text" id="user-input" placeholder="Type your message..." />
+   <button id="send-btn">Send</button>
+ </div>
+</div>
+
+
+ <!-- External JavaScript that executes the chatbot behavior -->
+ <script src="chatbot.js"></script>
+
+ <!-- JavaScript for Doctors Page -->
+  <script src="doctors.js"></script>
+</body>
+</html>

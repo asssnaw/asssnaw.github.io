@@ -1,0 +1,99 @@
+/* ========== Contact Section Design ========== */
+.contact-section {
+    padding: 60px 30px; /* Section padding */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Centered text */
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px; /* Space below heading */
+  }
+  
+  /* Contact container*/
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Contact form */
+  .contact-form {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border: 2px solid #1e3a8a;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  
+  .contact-form button {
+    padding: 12px 20px;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1e3a8a;
+  }
+  
+  /* Contact information */
+  .contact-info {
+    flex: 1 1 35%;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact-info h3 {
+    font-size: 22px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info p {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* toast notification */
+  .toast {
+    position: fixed; /* Fixed on screen */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Fade-in animation */
+    z-index: 9999;
+    font-size: 16px;
+  }
+  
+  .toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  

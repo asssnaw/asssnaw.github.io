@@ -1,0 +1,360 @@
+/* ========== Base Design as Global Style ========== */
+* {
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border in element's */
+    font-family: "Segoe UI", sans-serif; /* Sets a clean font for all text */
+  }
+  
+  body {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark gray text */
+  }
+  
+  /* ========== Header style ========== */
+  header {
+    background-color: #1e3a8a;  /* Deep blue background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Space inside the header */
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Places logo on left, navigations on right */
+    align-items: center; /* Vertically centers items in header */
+  }
+  
+  .logo {
+    font-size: 24px; /* Slightly larger font to emphasize the logo */
+    font-weight: bold; /* Makes the logo bold */
+  }
+  
+  nav ul {
+    list-style: none; /* Removes default bullets */
+    display: flex; /* Displays list items inline */
+    gap: 20px; /* Adds space between navigation items */
+  }
+  
+  nav a {
+    color: white; /* White text for navigation links */
+    text-decoration: none; /* Removes underlines */
+    font-weight: 500; /* Slightly bold */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Underlines navigation item when hover */
+  }
+  
+  nav a.active {
+    color: #2ba8ff; /* Highlights the active navigation link */
+    font-weight: bold; /* Makes the active item bold */
+    border-bottom: 2px solid #2ba8ff; /* Adds a blue underline to indicate active page */
+  }
+  
+  
+  
+  /* ========== Hero style (health) ========== */
+  .health {
+    position: relative;  /* Allows positioning of overlay */
+    height: 70vh; 
+    display: flex; /* Centers content */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centers text horizontally */
+    color: white;
+    padding: 0 20px;
+    overflow: hidden; /* Hides anything outside the hero bounds */
+  }
+  
+  .health::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('medical.png') no-repeat center center/cover; /* Full background image */
+    filter: blur(6px); /* Blurs the image */
+    z-index: 0; /* Ensures it's behind content */
+  }
+  
+  .health-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+  
+  .health-text {
+    position: relative; /* Ensures content appears above the background and the overlay */
+    z-index: 2;
+  }
+  
+  .health-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow effect */
+    text-align: center;
+  }
+  
+  .health-box h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #003366;
+  }
+  
+  .health-box p.trusted-partner {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  /* ========== Buttons and interactions  ========== */
+  .btn {
+    background-color: #1e3a8a;
+    padding: 12px 25px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1e3a8a;
+  }
+  
+  .auth-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .btn.secondary {
+    background-color: white;
+    color: #1e3a8a;
+    border: 2px solid #1e3a8a;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+  .btn.secondary:hover {
+    background-color: #1e3a8a;
+    color: white;
+  }
+  
+  .anonymous-btn {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .anonymous-btn:hover {
+    color: #1e3a8a;
+  }
+  
+  /* ========== Services section ========== */
+  .services {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #ffffff; /* white background */
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .card {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lifts card when hover */
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+  }
+  
+  /* ========== Footer ========== */
+  footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 40px;
+  }
+  
+  /* ========== Chatbot floating toggle button ========== */
+  #chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:  #1e3a8a;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    transition: background 0.3s;
+  }
+  
+  #chat-toggle:hover {
+    background:  #1e3a8a;
+  }
+  
+  /* ========== Chatbox Container ========== */
+  #chatbox {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 340px;
+    max-height: 480px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+    animation: popUp 0.3s ease;
+  }
+  
+  #chatbox.show {
+    display: flex;
+  }
+  
+  #chat-header {
+    background:  #1e3a8a;
+    color: #fff;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  /* Chat Messages Area */
+  #chat-messages {
+    padding: 12px;
+    flex: 1;
+    overflow-y: auto;
+    background: #ffffff;
+  }
+  
+  /* Chat Input Area */
+  .chat-input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background: #f5f5f5;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  #send-btn {
+    background:  #1e3a8a;
+    color: #fff;
+    border: none;
+    margin-left: 8px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  #send-btn:hover {
+    background:  #1e3a8a;
+  }
+  
+  /* Message Styles */
+  .message {
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 80%;
+    line-height: 1.4;
+    font-size: 14px;
+    clear: both;
+  }
+  
+  .message.user {
+    background: #d1edff;
+    align-self: flex-end;
+    margin-left: auto;
+    color: #000;
+  }
+  
+  .message.bot {
+    background: #f0f0f0;
+    align-self: flex-start;
+    margin-right: auto;
+    color: #333;
+  }
+  
+  /* Pop-up animation */
+  @keyframes popUp {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* shows that the bot is typing */
+  #typing-indicator {
+    font-style: italic;
+    color: #888;
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #f0f0f0;
+    max-width: 80%;
+    align-self: flex-start;
+  }
+  

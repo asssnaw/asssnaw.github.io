@@ -1,0 +1,132 @@
+/* ========== Doctor Section Design ========== */
+.doctors-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+
+  .doctors-section h2 {
+    font-size: 32px;      /* Increase size */
+    font-weight: 700;     /* Make it bolder */
+    color: #1e3a8a;       /* Optional: match the theme color */
+    margin-bottom: 30px;  /* Adds space below the heading */
+  }
+  
+
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px 20px;
+    width: 300px;
+    border: 2px solid #1e3a8a;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+  
+  /* Dark blue box */
+  .doctor-box {
+    background-color: #1e3a8a; /* dark blue */
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 95%;
+    overflow: hidden;
+  }
+  
+  /* Scroll Wrapper */
+  .doctor-scroll-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: hidden;
+  }
+  
+  /* Arrows */
+  .doctor-scroll-arrow {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+    padding: 0 10px;
+  }
+  
+  .doctor-scroll-arrow:hover {
+    transform: scale(1.2);
+    color: #ccc;
+  }
+  
+  /* Scroll Container */
+  .doctor-cards-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: visible;  /* allow vertical overflow for scaling */
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .doctor-cards-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .doctor-cards {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Individual Card */
+  .doctor-card {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    flex-shrink: 0;
+  
+    /* Fix for enlarging on hover */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .doctor-card h3 {
+    color: #1e3a8a;
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .doctor-card p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .doctor-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .doctor-cards {
+    display: flex;
+    gap: 20px;
+  }

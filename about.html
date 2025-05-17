@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+   <!-- this code makes the site responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page title displayed -->
+  <title>About Us - Fidoc</title>
+  <!-- Link to external stylesheets -->
+  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+   <!-- ===== Header ===== -->
+  <header>
+    <div class="logo">Fidoc</div>
+
+     <!-- Navigation Menu -->
+    <nav>
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li> <!-- Active Page Highlight -->
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ===== About Section: Page Content ===== -->
+  <section class="about-section">
+
+    <!-- About Fidoc -->
+    <h1>About Fidoc</h1>
+    <p>Fidoc is your healthcare partner of choice, providing complete medical care so that you get the best care available. 
+        In consideration of your privacy we also offer with the anonymous mode through which the patients can 
+        achieve the care they require from the doctor according to their requirement keeping their preference of concealing their identity secure.
+         With highly experienced and professional staff, we are always here to assist you anywhere and anytime.</p>
+
+    <!-- ANONYMOUS MODE -->
+    <h2>The Anonymous Mode</h2>
+    <p>One of the most distinctive aspects of our website.
+      This feature is designed to not disclose ur identity while u can get your free right advice online regarding any issue
+       u are facing. this feature is mainly designed targeting the teenagers or adults who may have issue regarding health but dont
+        want their parent to know. IF you are among them this feature provides a proper safe environment and a safe space for u
+         to consult the professionals for absolute free so that you can take up proper and safe steps with the support you require. </p>
+
+    <!-- Our Mission -->
+    <h3>Our Mission</h3>
+    <p>Our primary goal is to bring a phenomenal transformation to the healthcare experience so that it is more accessible to all, reliable in service, 
+        and patient-centric. We believe in delivering
+         innovative healthcare solutions that prioritize and give top consideration to our patients' overall health and well-being at all times.</p>
+
+    <!-- why fidoc -->
+    <h3>Why Choose Us?</h3>
+    <ul>
+      <li>24/7 Availability for urgent care</li>
+      <li>Highly qualified and experienced doctors</li>
+      <li>Seamless online consultations from the comfort of your home</li>
+      <li>Personalized care for every patient</li>
+      <li>Anonymous mode as per the preferance of the customer during consultation</li>
+    </ul>
+  </section>
+
+
+  <!-- ===== Footer Section ===== -->
+  <footer>
+   <!-- ===== Copyright ===== -->
+    <p>&copy; 2025 Fidoc. All rights reserved.</p>
+   <!-- ===== Contact Information ===== -->
+    <p>Contact: contact@fidoc.com | +91 9876543210</p>
+  </footer>
+
+<!-- ================= Chatbot Section ================= -->
+
+   <!-- Chatbot Toggle Button- bottom right -->
+ <div id="chat-toggle">💬</div>
+
+ <!-- Chatbox container (hidden by default, shown when clicked) -->
+ <div id="chatbox" class="hidden">
+ <!-- Chatbot title -->
+ <div id="chat-header">Digital Doctor</div>
+ <!-- Chat message window -->
+ <div id="chat-messages"></div>
+
+ <!-- User input and send button -->
+ <div class="chat-input-area">
+   <input type="text" id="user-input" placeholder="Type your message..." />
+   <button id="send-btn">Send</button>
+ </div>
+</div>
+
+
+ <!-- External JavaScript that executes the chatbot behavior -->
+ <script src="chatbot.js"></script>
+</body>
+</html>

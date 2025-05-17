@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+   <!-- this code makes the site responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page title displayed -->
+  <title>Fidoc - Your Health, Our Priority</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+  
+  <!-- ======= The Logo and Navigation ======= -->
+  <header>
+
+    <!-- Logo of the website -->
+    <div class="logo">Fidoc</div>  
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>                          <!-- Home Page -->
+        <li><a href="about.html">About</a></li>                                       <!-- About Page -->
+        <li><a href="services.html">Services</a></li>                                 <!-- Services Page -->
+        <li><a href="doctors.html">Doctors</a></li>                                   <!-- Doctors Page -->
+        <li><a href="contact.html">Contact</a></li>                                   <!-- Contact Page -->
+      </ul>
+    </nav>
+  </header>
+
+
+<!-- ================= Health Section : Introduction and Call to action Buttons ================= -->
+  <section class="health">
+
+    <!-- Overlay for dimming the background image -->
+    <div class="health-overlay"></div>
+
+    <!-- text content -->
+    <div class="health-text">
+      <div class="health-box">
+
+       <!-- Main Heading -->
+        <h1>Welcome to Fidoc</h1>
+        <!-- Subheading -->
+        <p class="trusted-partner">Your trusted partner for medical care.</p>
+        <!-- Book an appointmet Button - CTA BUTTONS  -->
+        <a href="#" class="btn">Book an Appointment</a>
+
+         <!-- Login and Signup Button Group -->
+        <div class="auth-buttons">
+          <a href="#" class="btn secondary">Log In</a>
+          <a href="#" class="btn secondary">Sign Up</a>
+        </div>
+
+        <!-- Optional Go Anonymous Button -->
+        <a href="#" class="btn anonymous-btn">Go Anonymous</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= Services Section: Overview of services provided by us!! ======= -->
+  <section class="services">
+
+     <!-- Title of the Section -->
+    <h2>Our Services</h2>
+
+    <!-- Cards Wrapper -->
+    <div class="service-cards">
+
+      <!-- Service Card 1 -->
+      <div class="card">
+        <h3>24/7 Support</h3>
+        <p>We're always here to help you, anytime, anywhere.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="card">
+        <h3>Expert Doctors</h3>
+        <p>Highly qualified and experienced professionals.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="card">
+        <h3>Online Consultation</h3>
+        <p>Connect with doctors from the comfort of your home.</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================= Footer Section ================= -->
+  <footer>
+     <!-- Copyright -->
+    <p>&copy; 2025 Fidoc. All rights reserved.</p>
+     <!-- Contact Information -->
+    <p>Contact: service@fidoc.com | +971 551234567</p>
+  </footer>
+
+<!-- ================= Chatbot Section ================= -->
+
+   <!-- Chatbot Toggle Button- bottom right -->
+ <div id="chat-toggle">💬</div>
+
+  <!-- Chatbox container (hidden by default, shown when clicked) -->
+ <div id="chatbox" class="hidden">
+  <!-- Chatbot title -->
+  <div id="chat-header">Digital Doctor</div>
+  <!-- Chat message window -->
+  <div id="chat-messages"></div>
+
+  <!-- User input and send button -->
+  <div class="chat-input-area">
+    <input type="text" id="user-input" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+ </div>
+
+
+<!-- External JavaScript that executes the chatbot behavior -->
+ <script src="chatbot.js"></script>
+
+</body>
+</html>
